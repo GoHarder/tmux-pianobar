@@ -32,7 +32,7 @@ set_tmux_option "@radio-read-data" 0
 
 while read line; do
    key="$(echo "$line" | cut -d '=' -f 1)"
-   value="$(echo "$line" | cut -d '=' -f 2)"
+   value="$(echo "$line" | cut -d '=' -f 2 | sed 's/\([/&^@!|#]\)/\\\1/g')"
    matches=$(grep -c "$key=" $temp_file)
 
    if [[ $matches -gt 0 ]]; then
