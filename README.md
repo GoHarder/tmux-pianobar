@@ -80,7 +80,8 @@ Currently the menu is bound to <kbd>Alt</kbd>–<kbd>/</kbd>. Hopefully in futur
 There are plenty of upgrades that can be done to this plugin. There are some pianobar controls that are not inserted into the menu. If you need advanced options currently you can view the feed from the radio menu.
 
 Theres also the option to put the track data in other places than the right status.
-
+<!---
 ## Help
 
 I am currently looking for a new position. If you know or you need someone to make applications with node.js, svelte, mongodb and some kubernetes knowledge please spread the word. Thanks.
+--->
