@@ -28,6 +28,8 @@ case "$1" in
       done < <(grep -e '^\(pRet\|pRetStr\|wRet\|wRetStr\)=' /dev/stdin);;
 esac
 
+[ -z "$data" ] && exit
+
 set_tmux_option "@radio-read-data" 0
 
 while read line; do
